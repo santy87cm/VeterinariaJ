@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>VeterinariaJ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>VeterinariaJ</h1>
+
+<h2>Propietarios</h2>
+<form id="formPropietario">
+  <input type="text" id="nombrePropietario" placeholder="Nombre" required>
+  <input type="text" id="telefonoPropietario" placeholder="Teléfono">
+  <input type="email" id="emailPropietario" placeholder="Email" required>
+  <button type="submit">Agregar</button>
+</form>
+<ul id="listaPropietarios"></ul>
+
+<h2>Mascotas</h2>
+<form id="formMascota">
+  <input type="text" id="nombreMascota" placeholder="Nombre" required>
+  <input type="text" id="especieMascota" placeholder="Especie">
+  <input type="number" id="edadMascota" placeholder="Edad">
+  <input type="number" id="propietarioIdMascota" placeholder="ID Propietario" required>
+  <button type="submit">Agregar</button>
+</form>
+<ul id="listaMascotas"></ul>
+
+<script src="app.js"></script>
+</body>
+</html>
