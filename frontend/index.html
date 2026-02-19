@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>VeterinariaJ</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeterinariaJ</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h2 { margin-top: 40px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #eee; }
+        input { margin: 5px; }
+        button { margin: 5px; }
+    </style>
 </head>
 <body>
+
 <h1>VeterinariaJ</h1>
+<p>Sistema de gestión para clínica veterinaria</p>
+
 
 <h2>Propietarios</h2>
-<form id="formPropietario">
-  <input type="text" id="nombrePropietario" placeholder="Nombre" required>
-  <input type="text" id="telefonoPropietario" placeholder="Teléfono">
-  <input type="email" id="emailPropietario" placeholder="Email" required>
-  <button type="submit">Agregar</button>
+<form id="propietario-form">
+    <input type="hidden" id="propietario-id">
+    <input type="text" id="propietario-nombre" placeholder="Nombre" required>
+    <input type="text" id="propietario-telefono" placeholder="Teléfono">
+    <input type="email" id="propietario-email" placeholder="Email" required>
+    <button type="submit">Guardar Propietario</button>
 </form>
-<ul id="listaPropietarios"></ul>
+<table id="propietarios-table">
+    <thead>
+        <tr><th>ID</th><th>Nombre</th><th>Teléfono</th><th>Email</th><th>Acciones</th></tr>
+    </thead>
+    <tbody></tbody>
+</table>
 
 <h2>Mascotas</h2>
-<form id="formMascota">
-  <input type="text" id="nombreMascota" placeholder="Nombre" required>
-  <input type="text" id="especieMascota" placeholder="Especie">
-  <input type="number" id="edadMascota" placeholder="Edad">
-  <input type="number" id="propietarioIdMascota" placeholder="ID Propietario" required>
-  <button type="submit">Agregar</button>
+<form id="mascota-form">
+    <input type="hidden" id="mascota-id">
+    <input type="text" id="mascota-nombre" placeholder="Nombre" required>
+    <input type="text" id="mascota-tipo" placeholder="Tipo" required>
+    <input type="number" id="mascota-edad" placeholder="Edad" min="0">
+    <select id="mascota-propietario"></select>
+    <button type="submit">Guardar Mascota</button>
 </form>
-<ul id="listaMascotas"></ul>
+<table id="mascotas-table">
+    <thead>
+        <tr><th>ID</th><th>Nombre</th><th>Tipo</th><th>Edad</th><th>Propietario</th><th>Acciones</th></tr>
+    </thead>
+    <tbody></tbody>
+</table>
 
 <script src="app.js"></script>
 </body>
 </html>
+
