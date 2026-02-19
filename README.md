@@ -1,16 +1,35 @@
 # VeterinariaJ
 
-Proyecto web de gestión de una veterinaria.  
-Permite registrar, visualizar, editar y eliminar **propietarios** y **mascotas**.  
+## Descripción
 
-El proyecto incluye:
+VeterinariaJ es una aplicación web para la gestión de una veterinaria.  
+Permite registrar, visualizar, editar y eliminar **propietarios** y **mascotas**, manteniendo una relación entre ambos.
 
-- **Backend:** Node.js + Express + SQLite
-- **Frontend:** HTML + CSS + JavaScript
-- **CRUD completo** para propietarios y mascotas
-- Validación de datos en frontend y backend
+Cada mascota pertenece a un propietario.
+
+---
+
+## Tecnologías utilizadas
+
+### Backend
+- Node.js
+- Express
+- SQLite
+- express-validator
+- CORS
+
+### Frontend
+- HTML
+- CSS
+- JavaScript (Fetch API)
 
 ---
 
 ## Estructura del proyecto
+
+
+
+
+
+
 
